@@ -1,9 +1,8 @@
 # DiverseAR Datasets
-This repository accompanies the paper "_3D Object Detection with VI-SLAM Point Clouds: The Impact of
-Object and Environment Characteristics on Model Performance_", to appear in the Proceedings of IEEE ICRA 2024. It introduces **VIP500**, a dataset of 4772 VI-SLAM point clouds that covers 500 different object and environment configurations. We also provide **VIP500-D**, an accompanying dataset of 20 RGB-D point clouds of the object classes and shapes in VIP500, for comparison purposes.
+This repository accompanies the workshop paper "_Advancing the Understanding and Evaluation of AR-Generated Scenes: When Vision-Language Models Shine and Stumble_", submitted to GenAI-XR 2025. It introduces **DiverseAR**, a dataset of 318 images collected from two commercial AR platforms (Amazon and Scaniverse), three AR applications (HoloLens) previously developed by our lab \cite{qu2024looking, xiu2024lobstar, eom2022neurolens}, and two AR applications (Apple Vision Pro and Android) specifically created for this project. 
 
 # Datasets
-The full VIP500 and VIP500-D datasets can be downloaded here: [https://github.com/timscargill/VIP-Datasets/tree/main/VIP-Datasets.](https://github.com/timscargill/VIP-Datasets/tree/main/VIP-Datasets) The dataset follows the hierarchical file structure shown below:
+The full DiverseAR dataset can be downloaded here: [[https://github.com/timscargill/VIP-Datasets/tree/main/VIP-Datasets.]([https://github.com/timscargill/VIP-Datasets/tree/main/VIP-Datasets](https://duke.box.com/s/0lbyth1aq575a1sbve5awa3og2h0pq1b)](https://duke.box.com/s/0lbyth1aq575a1sbve5awa3og2h0pq1b)) The dataset follows the hierarchical file structure shown below:
 ```
 VIP-Datasets
 └───VIP500
@@ -12,13 +11,6 @@ VIP-Datasets
 │   └───carpet_chair1_2.txt
 │   └───carpet_chair1_3.txt
 │   ...
-│
-└───VIP500-D
-│   │
-│   └───chair1.pcd
-│   └───chair2.pcd
-│   └───chair3.pcd
-|   ...
 ```
 
 **VIP500**
@@ -46,39 +38,15 @@ Finally, we segmented and labeled these point clouds using the [Open3D](https://
 
 _Contents:_ VIP500 consists of 4772 labeled VI-SLAM point clouds generated using the above process. It covers 500 different environment configurations: 4 common indoor object classes from the [ModelNet10 dataset](https://modelnet.cs.princeton.edu/) (chair, desk, sofa, and table) x 5 object shapes x 5 object textures x 5 floor textures. We ran 10 ORB-SLAM3 trials for each configuration; some configurations resulted in the loss of tracking in some trials and invalid point clouds, which were excluded from the dataset.
 
-**VIP500-D**
-
-_Format:_ Each point cloud in the VIP-500D dataset is in .pcd format.
-
-_Creation:_ We also created an RGB-D dataset that accompanies VIP500, to study the differences between the VI-SLAM point clouds and point clouds generated from 3D scanners. We generated the dataset using the same virtual environments with the same object shapes as those used in VIP500. We exported the virtual environments used to generate VIP500 (built in Unity), to FBX files and imported them to Unreal Engine 4.27.2. To generate the VIP500-D point clouds, we leveraged the Unreal plugin [AirSim](https://microsoft.github.io/AirSim/unreal_custenv/), which facilitates the creation of RGB-D point clouds after capturing RGB camera images and depth sensor readings. Examples of the RGB-D point clouds in VIP500-D are shown below:
-
-<img width="528" alt="Chair model variations in VIP500-D" src="https://github.com/timscargill/VIP-Datasets/assets/62528878/1b0fbd32-5172-4ec8-a040-4b7e43a6bd9d">
-
-_Contents:_ VIP500-D contains four object classes (chair, desk, sofa, and table), each with five object shapes. We do not consider different object and floor textures because these characteristics have minimal influence on RGB-D point clouds. 
-
-
-# Citation
-
-If you use Virtual-Inertial SLAM in an academic work, please cite: 
-
-```
-@inproceedings{VIP-500,
-  title={3D Object Detection with VI-SLAM Point Clouds: The Impact of Object and Environment Characteristics on Model Performance},
-  author={Duan, Lin, and Scargill, Tim and Chen, Ying and Gorlatova, Maria},
-  booktitle={Proceedings of IEEE ICRA 2024},
-  year={2024}
- }
- ```
-
 # Acknowledgements 
 
-The authors of this repository are Tim Scargill, Ying Chen and Maria Gorlatova. Contact information of the authors:
+The authors of this repository are Lin Duan, Yanming Xiu and Maria Gorlatova. Contact information of the authors:
 
-* Tim Scargill (timothyjames.scargill AT duke.edu)
-* Ying Chen (ying.chen151 AT duke.edu)
+* Lin Duan (lin.duan AT duke.edu)
+* Yanming Xiu (yanming.xiu AT duke.edu)
 * Maria Gorlatova (maria.gorlatova AT duke.edu)
 
-This work was supported in part by NSF grants CSR-1903136, CNS-1908051, CNS-2312760, and CNS-2112562, NSF CAREER Award IIS-2046072, a CISCO Research Award, and a Meta Research Award.
+This work was supported in part by NSF grants CSR-2312760, CNS-2112562 and IIS-2231975, NSF CAREER Award IIS-2046072, NSF NAIAD Award 2332744, a CISCO Research Award, a Meta Research Award, and Defense Advanced Research Projects Agency Young Faculty Award HR0011-24-1-0001. This paper has been approved for public release; distribution is unlimited. The contents of the paper do not necessarily reflect the position or the policy of the Defense Advanced Research Projects Agency. No official endorsement should be inferred.
  
 
 
