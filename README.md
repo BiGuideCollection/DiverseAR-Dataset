@@ -37,7 +37,7 @@ The DiverseAR dataset encompasses a wide spectrum of AR and non-AR scenarios, sh
 
 <img width="407" alt="Examples of key characteristics of the virtual and real objects in the DiverseAR dataset. a) Virtual pot placed in an abnormal place (on a cat); b) Real and virtual apples placed in a typical place (table); c) Virtual toy intersecting a real palm; d) Floating virtual cup; e) Virtual toy with unusual size; f) Virtual sign with abnormal pose; g) Virtual large toy on the table with its shadow cast in the wrong direction; h) Virtual laptop with no shadow; i) Virtual apple alongside other real objects under bright lighting; j) Three virtual cans alongside other real objects under dim lighting; k) Transparent, glowing virtual highlights; l) Low-render-quality virtual basket." src="https://github.com/BiGuideCollection/DiverseAR-Dataset/blob/main/readme_image/DiverseAR.png">
 
-<img width="406" alt="Key characteristics of the virtual and real objects in the DiverseAR dataset." src="https://github.com/BiGuideCollection/DiverseAR-Dataset/blob/main/readme_image/table.png">
+<img width="406" alt="Key characteristics of the virtual and real objects in the DiverseAR dataset." src="https://github.com/BiGuideCollection/DiverseAR-Dataset/blob/main/readme_image/DiverseARtable.png">
 
 # Acknowledgements 
 
