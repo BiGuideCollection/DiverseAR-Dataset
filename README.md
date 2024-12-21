@@ -35,7 +35,16 @@ _Creation:_ To evaluate the AR scene understanding capabilities of VLMs, we cura
 
 The DiverseAR dataset encompasses a wide spectrum of AR and non-AR scenarios, showcasing diverse characteristics of both virtual and real-world content. Table below summarizes the key characteristics represented in the dataset, while Figure below illustrates representative examples of these characteristics. The dataset includes single or multiple instances of identical and varied real and virtual objects across various AR images. These objects span numerous classes, including toys, food, shoes, plants, laptops, containers, and more.
 
-<img width="407" alt="Virtual chair variations" src="https://github.com/timscargill/VIP-Datasets/assets/62528878/2fd88f30-10ec-4ff6-99b5-6faf5b1ec932"><img width="406" alt="Virtual desk, sofa and table variations" src="https://github.com/timscargill/VIP-Datasets/assets/62528878/89b54594-5f40-46ec-9364-3010764a9272">
+<img width="407" alt="Examples of key characteristics of the virtual and real ob-
+jects in the DiverseAR dataset. a) Virtual pot placed in an abnormal
+place (on a cat); b) Real and virtual apples placed in a typical place
+(table); c) Virtual toy intersecting a real palm; d) Floating virtual
+cup; e) Virtual toy with unusual size; f) Virtual sign with abnormal
+pose; g) Virtual large toy on the table with its shadow cast in the
+wrong direction; h) Virtual laptop with no shadow; i) Virtual apple
+alongside other real objects under bright lighting; j) Three virtual
+cans alongside other real objects under dim lighting; k) Transparent,
+glowing virtual highlights; l) Low-render-quality virtual basket." src="https://github.com/BiGuideCollection/DiverseAR-Dataset/blob/main/readme_image/DiverseAR.png"><img width="406" alt="Virtual desk, sofa and table variations" src="https://github.com/timscargill/VIP-Datasets/assets/62528878/89b54594-5f40-46ec-9364-3010764a9272">
 
 # Acknowledgements 
 
